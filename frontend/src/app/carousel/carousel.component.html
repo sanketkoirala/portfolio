@@ -1,0 +1,15 @@
+<ngb-carousel *ngIf="images" class="slide-show">
+	<ng-template ngbSlide>
+		<div class="picsum-img-wrapper">
+			<img [src]="images[0]" alt="Random first slide" class="fixed-height-img" />
+		</div>
+		<div class="carousel-caption text-dark">
+			<h3>sanket.koiralas.com</h3>
+		</div>
+	</ng-template>
+	<ng-template ngbSlide>
+		<div class="picsum-img-wrapper">
+			<img [src]="images[1]" alt="Random second slide" class="fixed-height-img" />
+		</div>
+	</ng-template>
+</ngb-carousel>
