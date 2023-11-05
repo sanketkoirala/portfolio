@@ -1,0 +1,49 @@
+.footer {
+    background-color: rgb(209, 208, 208);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+.footer:hover {
+    transform: scale(1.02);
+  }
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+h3{
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+}
+
+p  {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    text-decoration: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
