@@ -1,5 +1,5 @@
 name: Deploy to test environment
-on: [push]
+on: [push, workflow_dispatch]
 jobs:
   test-deploy:
     runs-on: Linux
