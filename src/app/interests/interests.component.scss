@@ -24,9 +24,11 @@ h1 {
     padding-bottom: 30px;
 }
 
-
-
-
+@media (max-width: 768px) {
+    span {
+      display: none;
+    }
+  }
 
 
 
