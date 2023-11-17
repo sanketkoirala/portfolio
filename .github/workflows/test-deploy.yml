@@ -1,5 +1,9 @@
 name: Deploy to test environment
-on: [push, workflow_dispatch]
+on:
+  push:
+    branches:
+      - "refs/heads/test"
+  workflow_dispatch:
 jobs:
   test-deploy:
     runs-on: Linux
@@ -8,5 +12,5 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v4
       - run: docker compose down
-      - run: docker compose up --build --no-cache -d
+      - run: docker compose up --build -d
       - run: echo "This job's status is ${{ job.status }}."
