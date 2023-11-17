@@ -7,7 +7,7 @@ on:
       - "main"
   workflow_dispatch:
 jobs:
-  test-deploy:
+  prod-deploy:
     runs-on: Linux
     steps:
       - name: Check out repository code
