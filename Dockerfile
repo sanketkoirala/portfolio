@@ -2,7 +2,7 @@
 
 ARG NODE_VERSION=20
 
-FROM node:20-alpine as build-image
+FROM node:${NODE_VERSION}-alpine as build-image
 
 WORKDIR /app
 COPY package*.json /app/
