@@ -1,10 +1,10 @@
-name: Deploy to test environment
+name: Deploy to prod environment
 env:
-  PORT: 81
+  PORT: 80
 on:
   push:
     branches:
-      - "test"
+      - "main"
   workflow_dispatch:
 jobs:
   test-deploy:
