@@ -2,12 +2,11 @@ name: Deploy to test environment
 on:
   push:
     branches:
-      - "refs/heads/test"
+      - "test"
   workflow_dispatch:
 jobs:
   test-deploy:
     runs-on: Linux
-    if: github.ref == 'refs/heads/test'
     steps:
       - name: Check out repository code
         uses: actions/checkout@v4
