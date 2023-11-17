@@ -1,5 +1,9 @@
 name: Deploy to test environment
-on: [push, workflow_dispatch]
+on:
+  push:
+    branches:
+      - "refs/heads/test"
+  workflow_dispatch:
 jobs:
   test-deploy:
     runs-on: Linux
