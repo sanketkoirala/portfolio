@@ -1,0 +1,17 @@
+name: Deploy to prod environment
+env:
+  PORT: 80
+on:
+  push:
+    branches:
+      - "main"
+  workflow_dispatch:
+jobs:
+  prod-deploy:
+    runs-on: Linux
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - run: docker compose down
+      - run: docker compose up --build -d
+      - run: echo "This job's status is ${{ job.status }}."
