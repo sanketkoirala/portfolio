@@ -1,0 +1,9 @@
+services:
+  server:
+    build:
+      context: .
+      no_cache: true
+    environment:
+      NODE_ENV: production
+    ports:
+      - ${PORT}:80
